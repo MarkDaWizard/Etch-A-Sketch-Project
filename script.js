@@ -13,14 +13,24 @@ function createGrid(squarePerSide) {
         divBox.setAttribute("class", "gridBox");
         let boxSizeRatio = 100 / squarePerSide;
         divBox.style.flexBasis = boxSizeRatio.toString() + "%";
+
+
         divBox.addEventListener('mouseover', () => {
-            divBox.style.backgroundColor = "black";
+            divBox.style.backgroundColor = "rgb(" + getRandomColor().toString() + ")";
 
         });
         gridContainer.appendChild(divBox);
 
     }
 
+}
+
+function getRandomColor() {
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    let color = [r, g, b];
+    return color;
 }
 
 function createButton() {
