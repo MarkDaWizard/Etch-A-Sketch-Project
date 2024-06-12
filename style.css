@@ -4,7 +4,7 @@ html {
 
 .gridContainer{
     display: flex;
-    align-items: center;
+    align-content: stretch;
     flex-wrap: wrap;
     margin: auto;
     height: 1000px;
@@ -15,9 +15,15 @@ html {
     border-style: solid;
     border-color: black;
     background-color: white;
-    margin: 0;
+    margin: -1px;
     padding: 0;
     border-width: 1px;
-    width: 60.5px;
-    height: 60.5px;
+    
+
+}
+
+.generatorButton {
+    margin: 20px; 
+    font-size: 32px;
+    
 }
